@@ -1,4 +1,4 @@
-![pipPilot Preview](assets/pipPIlot.png)
+![pipPilot Preview](assets/pipPIlot1.png)
 
 # pipPilot
 
