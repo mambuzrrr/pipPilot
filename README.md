@@ -8,28 +8,66 @@ This tool was originally created for my personal use, but I decided to share it 
 
 ## Features
 
-- Display installed Python packages with current and latest versions
-- Highlight outdated packages and allow easy updates
-- Install new packages by entering the package name
-- Select the Python interpreter you want to manage
-- Clean and modern dark-themed interface
-- Real-time update logs and progress feedback
+- Display installed Python packages with current and latest versions  
+- Highlight outdated packages and allow easy updates  
+- Install new packages by entering the package name  
+- Uninstall packages with confirmation dialog  
+- Select the Python interpreter you want to manage  
+- Clean and modern dark-themed interface  
+- Real-time update/uninstall logs and progress feedback  
 
 ---
+
 ## Preview
-![pipPilot Preview](assets/pippilot_preview.png)
+
+![pipPilot Preview](assets/pippilot_preview.png)  
 ![pipPilot Preview](assets/pippilot_preview1.png)
 
-## Status
+---
 
-This tool is currently in active development and will be available soon on GitHub. Stay tuned!
+## Installation & Usage
 
-## Usage
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/mambuzrrr/pipPilot.git
+   cd pipPilot
+   ```
 
-At launch, select your preferred Python interpreter, then manage your packages effortlessly via the intuitive GUI.
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## Developer
-
-Created by Brejax (Rico) - www.devluxe.eu
+3. **Run the application**
+   ```bash
+   python run.py
+   ```
+- A dialog will prompt you to select one of the detected Python interpreters.
+- After selection, the main window opens showing all installed packages.
+- Use the Search bar, Refresh button, or Show outdated first toggle to filter and sort packages.
+- Click Update to upgrade a package, Uninstall to remove it (with confirmation), or Info to view details.
+- To install a new package, type its name into the input field and press Install.
 
 ---
+
+## Requirements:
+- Python 3.8+
+- PyQt6
+- requests
+- sys
+- shutil
+- subprocess
+- json
+
+Install with:
+```bash
+pip install PyQt6 requests ...
+```
+
+# Feedback and contributions are welcome!
+
+Developer: Rico (mambuzrrr)
+
+--- 
+
+### Coming Soon: A Linux-friendly CLI version of pipPilot is in the works! Stay tuned for a lightweight, terminal‑based package manager that brings the same intuitive experience to your command line.
