@@ -24,7 +24,7 @@ class LandingDialog(QDialog):
         self.setWindowTitle("pipPilot – Select Interpreter")
         self.setFixedSize(480, 280)
 
-        # Stylesheet: nur was Qt sauber versteht
+        # Stylesheet
         self.setStyleSheet("""
             background-color: #282c34;
             color: white;
@@ -81,7 +81,6 @@ class LandingDialog(QDialog):
         main_layout.setSpacing(20)
         main_layout.setAlignment(Qt.AlignmentFlag.AlignTop)
 
-        # Oberste Leiste mit Version + Entwickler ganz links
         top_bar = QWidget()
         top_layout = QHBoxLayout(top_bar)
         top_layout.setContentsMargins(0, 0, 0, 0)
@@ -96,13 +95,11 @@ class LandingDialog(QDialog):
 
         main_layout.addWidget(top_bar)
 
-        # Großer Titel mittig
         self.title_label = QLabel("pipPILOT")
         self.title_label.setObjectName("TitleLabel")
         self.title_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         main_layout.addWidget(self.title_label)
 
-        # Beschreibung mittig
         self.desc_label = QLabel(
             "Select the Python interpreter you want to use for managing your packages."
         )
@@ -111,25 +108,21 @@ class LandingDialog(QDialog):
         self.desc_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         main_layout.addWidget(self.desc_label)
 
-        # ComboBox für Interpreter
         self.combo = QComboBox()
         self.interpreters = find_interpreters()
         self.combo.addItems(self.interpreters)
         main_layout.addWidget(self.combo)
 
-        # Detektions-Status: Anzahl Interpreter
         status = f"Detected {len(self.interpreters)} interpreter(s)."
         self.detect_label = QLabel(status)
         self.detect_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         main_layout.addWidget(self.detect_label)
 
-        # Detektions-Status: Python vorhanden?
         python_status = "Detected Python: Yes" if self.interpreters else "Detected Python: No"
         self.python_detect_label = QLabel(python_status)
         self.python_detect_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         main_layout.addWidget(self.python_detect_label)
 
-        # Continue Button
         self.btn_continue = QPushButton("Continue")
         self.btn_continue.setObjectName("PrimaryBtn")
         self.btn_continue.setCursor(Qt.CursorShape.PointingHandCursor)
