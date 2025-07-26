@@ -20,8 +20,8 @@ This tool was originally created for my personal use, but I decided to share it 
 
 ## Preview
 
-![pipPilot Preview](assets/pippilot_preview.png)  
-![pipPilot Preview](assets/pippilot_preview1.png)
+![pipPilot Preview](assets/Screenshot%202025-07-26%20234947.png)  
+![pipPilot Preview](assets/Screenshot%202025-07-26%20235042.png)
 
 ---
 
