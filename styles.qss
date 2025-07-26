@@ -1,0 +1,72 @@
+/* Base */
+* {
+  font-family: "Segoe UI", sans-serif;
+  color: #DDD;
+}
+
+/* Main window background */
+QMainWindow {
+  background-color: #20232A;
+}
+
+/* Header */
+#Header {
+  background-color: #282C34;
+  padding: 8px;
+}
+
+/* Logo text */
+#Header QLabel#AppTitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: #61AFEF;
+}
+
+/* Sidebar */
+#Sidebar {
+  background-color: #21252B;
+  border-right: 1px solid #2C313C;
+}
+#Sidebar QPushButton {
+  background: transparent;
+  color: #BBB;
+  text-align: left;
+  padding: 8px 12px;
+  border: none;
+}
+#Sidebar QPushButton:hover {
+  background-color: #2C313C;
+  color: #FFF;
+}
+#Sidebar QPushButton:pressed {
+  background-color: #61AFEF;
+  color: #20232A;
+}
+
+/* Table */
+QTableView {
+  background-color: #1E2127;
+  gridline-color: #2C313C;
+  alternate-background-color: #25292F;
+  border: none;
+}
+
+/* Console */
+#Console {
+  background-color: #1E1E1E;
+  color: #98C379;
+  border: none;
+  padding: 6px;
+  font-family: "Courier New", monospace;
+}
+
+/* Buttons */
+QPushButton#Primary {
+  background-color: #61AFEF;
+  color: #20232A;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+QPushButton#Primary:hover {
+  background-color: #79C0FF;
+}
