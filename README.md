@@ -66,7 +66,7 @@ pip install PyQt6 requests ...
 
 # Feedback and contributions are welcome!
 
-Developer: Rico (mambuzrrr)
+Developer: Rico (mambuzrrr) | pipPilot web: https://devluxe.eu/pippilot
 
 --- 
 
