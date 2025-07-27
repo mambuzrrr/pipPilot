@@ -1,6 +1,6 @@
 ![pipPilot Preview](assets/pipPIlot1.png)
 
-# pipPilot
+# Python - pipPilot
 
 **pipPilot** is a sleek and user-friendly graphical interface for managing Python packages across multiple Python interpreters on your system.
 
