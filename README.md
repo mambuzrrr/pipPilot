@@ -68,6 +68,11 @@ pip install PyQt6 requests ...
 
 # Python - pipPilot CLI Version
 
+## Preview:
+
+![pipPilot Preview](assets/Screenshot%202025-08-06%20220641.png)
+
+
 ## Requirements
 
 - Python 3.8 or newer  
