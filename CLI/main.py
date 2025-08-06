@@ -123,7 +123,6 @@ class PipPilotApp(App):
             case "quit":
                 self.exit()
             case _:
-                # z.B. "back" landet hier, aber wird in den Screens sauber behandelt
                 pass
 
 class PackageInputScreen(Screen):
@@ -316,3 +315,4 @@ class OutputScreen(Screen):
 
 if __name__ == "__main__":
     PipPilotApp().run()
+
