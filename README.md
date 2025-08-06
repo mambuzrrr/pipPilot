@@ -64,10 +64,40 @@ Install with:
 pip install PyQt6 requests ...
 ```
 
+--- 
+
+# Python - pipPilot CLI Version
+
+## Requirements
+
+- Python 3.8 or newer  
+- textual  
+- rich  
+
+Install via:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Running the CLI Version:
+1. Copy the CLI folder somewhere.
+2. Create and activate a virtual environment:
+```
+python3 -m venv .venv
+source .venv/bin/activate
+```
+3. Install dependencies:
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+4. Launch pipPilot CLI:
+```bash
+python main.py
+```
+
+---
 # Feedback and contributions are welcome!
 
 Developer: Rico (mambuzrrr) | pipPilot web: https://devluxe.eu/pippilot
-
---- 
-
-### Coming Soon: A Linux-friendly CLI version of pipPilot is in the works! Stay tuned for a lightweight, terminal‑based package manager that brings the same intuitive experience to your command line.
